@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-loadbalancer:3.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-loadbalancer/3.0.1/1ec9d27220d6a2dad5062e19a5b114e2be9b675b/spring-cloud-loadbalancer-3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-loadbalancer/3.0.1/f452c798849155a1415afcd7e1460babed10a3fa/spring-cloud-loadbalancer-3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

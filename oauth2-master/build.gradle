@@ -1,0 +1,54 @@
+wrapper {
+    gradleVersion = "6.8"
+}
+
+buildscript {
+    ext {
+        springBootVersion = '2.4.5'
+    }
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("io.spring.gradle:dependency-management-plugin:1.0.11.RELEASE")
+        classpath("io.franzbecker:gradle-lombok:4.0.0")
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'io.franzbecker.gradle-lombok'
+
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
+    [compileJava, compileTestJava]*.options*.encoding = "UTF-8"
+
+    dependencies {
+        implementation 'org.apache.commons:commons-lang3:3.12.0'
+        implementation 'org.apache.commons:commons-collections4:4.4'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        annotationProcessor 'org.projectlombok:lombok:1.18.20'
+        compileOnly 'org.projectlombok:lombok:1.18.20'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+        testCompileOnly 'org.projectlombok:lombok:1.18.20'
+    }
+}

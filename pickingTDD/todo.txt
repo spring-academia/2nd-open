@@ -1,0 +1,31 @@
+Picking System.
+
+ORDER
+PICKER
+PICKINGLIST
+SKU
+
+주문 -> 피킹리스트 -> 피커 -> 피킹 완료
+
+-------TO-DO----------
+피킹중단
+피킹 -> 에러
+
+-----------DONE---------------
+ORDER생성
+Order 검증.
+Order.state => enum
+OrderDetail validation추가
+OrderDetail 생성
+Order validation 에 OrderDetail 검증 추가
+changeOrderState 메소드 생성
+pickingStateEnum
+피킹 리스트 생성
+PickingList - Order 연관관계 설정
+피킹 리스트 피커에게 할당
+Picker 구체화
+Picker에게 PickingList Assign
+Picker 할당 할때 PickingList도 할달
+Picking List Assign 할때 Picker 도 할당
+피킹
+피킹 완료

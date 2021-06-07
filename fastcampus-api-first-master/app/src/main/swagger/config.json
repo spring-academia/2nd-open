@@ -1,0 +1,23 @@
+{
+
+  "library": "spring-boot",
+  "interfaceOnly" : true,
+  "basePackage" : "org.slipp.masil.games.apis",
+  "configPackage" : "example.api.config",
+  "modelPackage": "org.slipp.masil.games.apis",
+  "apiPackage": "org.slipp.masil.games.apis",
+  "invokerPackage": "org.slipp.masil.games.apis",
+  "java8" : true,
+  "useTags" : true,
+  "skipDefaultInterface" : true,
+  "dateLibrary": "java8",
+  "useBeanValidation" : true,
+  "serializableModel" : true,
+  "implicitHeaders" : false,
+  "swaggerDocketConfig": false,
+  "hideGenerationTimestamp": false,
+
+  "useSpringfox": false,
+  "reactive": false,
+  "openApiNullable" : false
+}
