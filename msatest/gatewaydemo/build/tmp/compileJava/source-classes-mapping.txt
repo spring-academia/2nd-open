@@ -1,2 +1,0 @@
-com/msatest/gateway/GatewayDemoApplication.java
- com.msatest.gateway.GatewayDemoApplication
